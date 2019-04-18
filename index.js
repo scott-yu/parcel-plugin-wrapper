@@ -25,7 +25,7 @@ ${footer}`
     const {name} = bundle
     const wrappingCode = await processFn({name, bundler})
 
-    if (wrappingCode) {
+    if (wrappingCode && name) {
       writeAsset(name, wrappingCode)
     }
 
